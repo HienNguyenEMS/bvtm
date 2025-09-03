@@ -2,56 +2,63 @@
 
 body { 
     font-family: 'Quicksand', sans-serif; 
-    color: #374151; /* Xám đậm (#374151) cho độ tương phản tốt hơn */
+    background-color: #004d40; /* Xanh ngọc rất đậm làm nền chính */
+    color: #e0f2f1; /* Chữ màu trắng ngà để dịu mắt */
 }
 
 /* Tông màu chủ đạo */
-.bg-jade { background-color: #26A69A; }
-.text-jade { color: #26A69A; }
-.border-jade { border-color: #26A69A; }
+.bg-jade-dark { background-color: #004d40; }
+.bg-jade-medium { background-color: #00796b; }
+.bg-jade-light { background-color: #b2dfdb; }
+.text-jade { color: #80cbc4; }
 
-.bg-lotus-pink { background-color: #FCE7F3; } /* Hồng sen nhạt hơn */
-.text-lotus-pink { color: #EC4899; } /* Hồng sen đậm cho chữ để dễ đọc */
+.bg-lotus-pink-light { background-color: #fce4ec; }
+.text-lotus-pink { color: #f48fb1; } /* Hồng sen nhạt cho text */
+.border-lotus-pink { border-color: #f48fb1; }
 
-.text-charcoal { color: #374151; }
+.text-charcoal-light { color: #cfd8dc; } /* Xám sáng cho text phụ */
+.bg-charcoal-dark { background-color: #263238; } /* Xám đậm cho footer */
 
-/* Hiệu ứng chung */
+/* Card và Layout nén */
+.content-card {
+    background-color: rgba(255, 255, 255, 0.05); /* Nền thẻ mờ */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem; /* Giảm padding */
+    transition: all 0.3s ease;
+}
+.content-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #f48fb1;
+}
+section {
+    padding-top: 2.5rem; /* Giảm padding section */
+    padding-bottom: 2.5rem;
+}
+
+/* Nút bấm */
 .btn {
-    padding: 0.75rem 1.5rem;
+    padding: 0.6rem 1.25rem;
     border-radius: 9999px;
-    font-weight: 700;
+    font-weight: 600;
     transition: all 0.3s ease;
     display: inline-block;
-    letter-spacing: 0.5px;
+    border: 1px solid transparent;
 }
-.btn-jade {
-    background-color: #26A69A;
-    color: white;
+.btn-primary {
+    background-color: #f48fb1;
+    color: #212121;
 }
-.btn-jade:hover {
-    background-color: #208a7e;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(38, 166, 154, 0.4);
+.btn-primary:hover {
+    background-color: #f06292;
+    transform: scale(1.05);
 }
-.card-hover {
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+.btn-secondary {
+    background-color: transparent;
+    color: #f48fb1;
+    border-color: #f48fb1;
 }
-.card-hover:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
-}
-.nav-link-active {
-    color: #26A69A;
-    font-weight: 700;
-    position: relative;
-}
-.nav-link-active::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #26A69A;
+.btn-secondary:hover {
+    background-color: #f48fb1;
+    color: #212121;
 }

@@ -4,57 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới Thiệu - BVTM BS. An</title>
+    <meta name="description" content="Tìm hiểu về Bệnh viện Thẩm mỹ BS. An, đội ngũ bác sĩ chuyên khoa và hệ thống công nghệ thẩm mỹ hiện đại bậc nhất.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-white">
 
-    <!-- Header -->
+    <!-- Header (Copy từ index.html và đổi link active) -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-2xl font-bold text-jade">BVTM BS. An</a>
-            <nav class="hidden md:flex space-x-8 items-center">
+            <nav class="hidden md:flex space-x-6 items-center text-sm font-medium">
                 <a href="index.html" class="hover:text-jade">Trang Chủ</a>
-                <a href="gioi-thieu.html" class="nav-link-active">Giới Thiệu</a>
+                <a href="gioi-thieu.html" class="text-jade font-semibold border-b-2 border-jade pb-1">Giới Thiệu</a>
                 <a href="dich-vu.html" class="hover:text-jade">Dịch Vụ</a>
-                <a href="doi-ngu-bac-si.html" class="hover:text-jade">Đội Ngũ Bác Sĩ</a>
                 <a href="thu-vien-anh.html" class="hover:text-jade">Hình Ảnh</a>
-                <a href="lien-he.html" class="btn btn-jade">Đặt Lịch Tư Vấn</a>
+                <a href="lien-he.html" class="hover:text-jade">Liên Hệ</a>
+                <a href="lien-he.html" class="btn btn-jade ml-4">Đặt Lịch Tư Vấn</a>
             </nav>
-            <button class="md:hidden text-jade">...</button>
+            <button class="md:hidden text-jade"><i data-feather="menu" class="w-6 h-6"></i></button>
         </div>
     </header>
 
     <main>
-        <section class="py-16">
+        <!-- Giá Trị Cốt Lõi -->
+        <section class="py-12 bg-gray-50">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h1 class="text-4xl font-bold text-charcoal">Về Bệnh Viện Thẩm Mỹ Bác Sĩ An</h1>
-                    <p class="text-gray-600 mt-4 max-w-3xl mx-auto">Nơi khoa học và nghệ thuật hội tụ để tôn vinh vẻ đẹp Việt, mang đến sự tự tin và hạnh phúc cho hàng ngàn khách hàng.</p>
+                <div class="text-center mb-10">
+                    <h1 class="text-3xl font-bold text-charcoal mb-2">Giá Trị Cốt Lõi</h1>
+                    <p class="text-gray-600">Nền tảng cho mọi hoạt động của chúng tôi.</p>
                 </div>
-                
-                <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
-                    <div class="md:w-1/2"><img src="https://placehold.co/600x400/e2e8f0/cccccc?text=Khong+Gian+BV" class="rounded-lg shadow-xl"></div>
-                    <div class="md:w-1/2">
-                        <h2 class="text-3xl font-bold text-jade mb-4">Sứ Mệnh Của Chúng Tôi</h2>
-                        <p class="text-gray-600 leading-relaxed">Chúng tôi tin rằng vẻ đẹp đích thực đến từ sự hài hòa giữa nét đẹp bên ngoài và sự tự tin bên trong. Sứ mệnh của BVTM BS. An là mang đến các giải pháp thẩm mỹ an toàn, hiệu quả và phù hợp nhất với từng cá nhân, giúp mỗi khách hàng khám phá và hoàn thiện phiên bản tốt nhất của chính mình.</p>
-                    </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div><div class="bg-jade text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"><i data-feather="shield" class="w-8 h-8"></i></div><h3 class="text-xl font-bold mb-2">An Toàn Tuyệt Đối</h3><p class="text-sm text-gray-600">Tuân thủ nghiêm ngặt quy trình của Bộ Y tế, đảm bảo an toàn là ưu tiên số một.</p></div>
+                    <div><div class="bg-jade text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"><i data-feather="star" class="w-8 h-8"></i></div><h3 class="text-xl font-bold mb-2">Chất Lượng Vượt Trội</h3><p class="text-sm text-gray-600">Ứng dụng công nghệ hàng đầu và vật liệu cao cấp để mang lại kết quả hoàn mỹ.</p></div>
+                    <div><div class="bg-jade text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"><i data-feather="heart" class="w-8 h-8"></i></div><h3 class="text-xl font-bold mb-2">Tận Tâm Chăm Sóc</h3><p class="text-sm text-gray-600">Đồng hành cùng khách hàng từ khâu tư vấn đến chăm sóc hậu phẫu chu đáo.</p></div>
                 </div>
+            </div>
+        </section>
 
-                <div class="bg-gray-50 rounded-lg p-10">
-                    <h2 class="text-3xl font-bold text-center text-charcoal mb-10">Giá Trị Cốt Lõi</h2>
-                    <div class="grid md:grid-cols-3 gap-8 text-center">
-                        <div><div class="bg-jade text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">⚕️</div><h3 class="text-xl font-bold mb-2">An Toàn Tuyệt Đối</h3><p class="text-gray-600">Quy trình vô khuẩn theo tiêu chuẩn Bộ Y Tế, đặt sự an toàn của khách hàng lên hàng đầu.</p></div>
-                        <div><div class="bg-jade text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">❤️</div><h3 class="text-xl font-bold mb-2">Tận Tâm Chuyên Nghiệp</h3><p class="text-gray-600">Đội ngũ y bác sĩ và nhân viên luôn lắng nghe, thấu hiểu và chăm sóc khách hàng như người thân.</p></div>
-                        <div><div class="bg-jade text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">✨</div><h3 class="text-xl font-bold mb-2">Công Nghệ Dẫn Đầu</h3><p class="text-gray-600">Luôn cập nhật và ứng dụng những công nghệ, phương pháp thẩm mỹ tiên tiến nhất trên thế giới.</p></div>
-                    </div>
+        <!-- Đội Ngũ Bác Sĩ -->
+        <section class="py-12">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-charcoal mb-8">Đội Ngũ Bác Sĩ Chuyên Môn Cao</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Doctor Card 1 -->
+                    <div class="text-center group"><div class="relative overflow-hidden rounded-lg"><img src="https://placehold.co/400x500/e2e8f0/cccccc?text=BS.+An" class=" group-hover:scale-105 transition-transform duration-300 w-full"><div class="absolute inset-0 bg-black bg-opacity-20"></div></div><h3 class="text-lg font-bold mt-3">Bác Sĩ An</h3><p class="text-lotus-pink text-sm font-semibold">Giám Đốc Chuyên Môn</p></div>
+                    <!-- Doctor Card 2 to 4 (Demo) -->
+                    <div class="text-center group"><div class="relative overflow-hidden rounded-lg"><img src="https://placehold.co/400x500/e2e8f0/cccccc?text=BS.+Linh" class=" group-hover:scale-105 transition-transform duration-300 w-full"><div class="absolute inset-0 bg-black bg-opacity-20"></div></div><h3 class="text-lg font-bold mt-3">BS. CK1. Thùy Linh</h3><p class="text-lotus-pink text-sm font-semibold">Trưởng Khoa Thẩm Mỹ Mắt</p></div>
+                    <div class="text-center group"><div class="relative overflow-hidden rounded-lg"><img src="https://placehold.co/400x500/e2e8f0/cccccc?text=BS.+Minh" class=" group-hover:scale-105 transition-transform duration-300 w-full"><div class="absolute inset-0 bg-black bg-opacity-20"></div></div><h3 class="text-lg font-bold mt-3">ThS. BS. Quang Minh</h3><p class="text-lotus-pink text-sm font-semibold">Chuyên Khoa Nâng Mũi</p></div>
+                    <div class="text-center group"><div class="relative overflow-hidden rounded-lg"><img src="https://placehold.co/400x500/e2e8f0/cccccc?text=BS.+Huong" class=" group-hover:scale-105 transition-transform duration-300 w-full"><div class="absolute inset-0 bg-black bg-opacity-20"></div></div><h3 class="text-lg font-bold mt-3">BS. CK2. Thanh Hương</h3><p class="text-lotus-pink text-sm font-semibold">Trưởng Khoa Gây Mê</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Công Nghệ Thiết Bị -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-charcoal mb-8">Công Nghệ Thẩm Mỹ Hàng Đầu</h2>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-center"><div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-md"><i data-feather="activity" class="w-10 h-10 text-jade"></i></div><h3 class="font-bold">Công Nghệ Vectra XT 3D</h3><p class="text-sm text-gray-600">Xem trước kết quả phẫu thuật.</p></div>
+                    <div class="text-center"><div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-md"><i data-feather="aperture" class="w-10 h-10 text-jade"></i></div><h3 class="font-bold">Laser PicoSure Pro</h3><p class="text-sm text-gray-600">Trẻ hóa da, xóa xăm & nám.</p></div>
+                    <div class="text-center"><div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-md"><i data-feather="layers" class="w-10 h-10 text-jade"></i></div><h3 class="font-bold">Hệ Thống Nội Soi Karl Storz</h3><p class="text-sm text-gray-600">Phẫu thuật chính xác, ít xâm lấn.</p></div>
+                    <div class="text-center"><div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-md"><i data-feather="thermometer" class="w-10 h-10 text-jade"></i></div><h3 class="font-bold">Phòng Mổ Vô Khuẩn</h3><p class="text-sm text-gray-600">Đạt chuẩn an toàn của Bộ Y Tế.</p></div>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-charcoal text-white">...</footer>
+    <footer class="bg-charcoal text-white pt-10 pb-6">
+        <!-- ... (Copy footer từ index.html) ... -->
+    </footer>
 
+    <script>feather.replace()</script>
 </body>
 </html>
